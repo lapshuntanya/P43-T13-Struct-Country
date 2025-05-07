@@ -50,6 +50,13 @@ int main()
 
     cout << "===================================\n";
     //Вивести назви країн з визначеної частини світу. Частину світу задає користувач
+    char text[50] = "";
+    cout << "Input part of world: ";
+    cin >> text;
 
+    for (int i = 0; i < N; i++) {
+        if (strcmp(arr[i].worldPart, text) == 0)
+            cout << arr[i].name << endl;
+    }
 
 }  
